@@ -3,49 +3,35 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	color: white;
 
+}
+
+body {
+}
+
+.cover-container {
+    max-width: 42em;
+    margin: 25vh;
+    text-align: center;
 
 }
 
-}
-.navbar {
-  height: 80px;
-  width: 100%;
-  background: #55efcb;
-  background: linear-gradient(to right, #55efcb, #5bcaff);
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+#nameCover { 
+  padding-right: 100px;
 }
 
-.navbar a {
-  font-size: 20px;
-  position: relative;
-  text-decoration: none;
-  margin: 0 auto;
-  color: #fff;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: all 0.5s ease-in;
-  overflow: hidden;
-  line-height: 1;
+.cover {
+  color: #fdf9f9;
 }
 
-a:before {
-  content: "";
-  position: absolute;
-  transition: all 0.3s cubic-bezier(0.2, 1, 0.3, 1);
-  left: 0;
-  right: 100%;
-  top: 50%;
-  background: #ad310c;
-  height: 4px;
-  z-index: 1;
+.h3landing {
+	padding-right: 100px;
 }
 
-a:hover:before {
-  right: 0;
+h6 {
+  padding-right: 100px;
 }
 
 
@@ -59,9 +45,53 @@ a:hover:before {
 	/*padding-top: 100px*/;
 }
 
+.aboutLanding {
+  background-image: url(../../assets/images/chocolatecake.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /*padding-top: 100px*/;
+}
+
+.aboutMenu {
+	background-image: url(../../assets/images/dining3.jpg);
+	/*height: 100%;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-attachment: fixed;*/
+	/*padding-top: 100px*/;
+}
+
+#menu {
+	/*background-color: rgba(192,192,192,0.75);*/
+	margin-top: 200px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+#winelist {
+	/*background-color: rgba(192,192,192,0.75);*/
+	margin-top: 200px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
+.aboutWines {
+	background-image: url(../../assets/images/vintage.jpg);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/*padding-top: 100px*/;
+}
+
 article {
 	color: white;
-	padding-top: 150px;
+	margin-bottom: 550px;
+  padding-top: 150px;
 	height: 25vh;
 }
 
@@ -78,9 +108,7 @@ section {
 	padding: 40px;	
 }
 
-.articleFooter {
-	text-align: center;
-}
+
 
 .aboutFood img {
 	height:100%;
@@ -89,22 +117,55 @@ section {
 	padding: 15px;
 }
 
-
-#footer {
-	/*border: 1px solid red*/;
-	text-align: center;
-	background-color: transparent;
-	position: fixed;
-	bottom: 0;
-	/*z-index: 999;*/
-
-
+.footer {
+  text-align: center;
+  padding-top: 100px;
+ 
 }
+
+
+
+.masonry { /* Masonry container */
+    -webkit-column-count: 4;
+  -moz-column-count:4;
+  column-count: 4;
+  -webkit-column-gap: 1em;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+   margin: 1.5em;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+	-webkit-transition:1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+.item img{max-width:100%;}
+
+
+
 
 
 /*MEDIA QUERIES - always at the end*/
 /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) { ... }
+@media (max-width: 575.98px) { 
+	#footerAbout {
+		padding-top: 500px;
+		/*position: relative;*/
+		bottom: 0;
+	}
+ }
 
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) { ... }
