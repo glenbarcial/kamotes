@@ -20,7 +20,7 @@
 
 
 		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Lato|Quicksand" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Dosis" rel="stylesheet">
 
 		<!-- FONT AWESOME -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">	
@@ -30,83 +30,54 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
 					
 </head>
-<body class="aboutWines">
+<body class="aboutLanding">
 
 
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <!-- NAVBAR -->
-      <a class="navbar-brand" href="landingPage.html">Kamotes</a>
+      <a class="navbar-brand" href="index.html">Kamotes</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link dropdown-toggle" href="#" role="button" id="dropDown" data-toggle="dropdown">Dining</a>
                 <div class="dropdown-menu">
 			    	<a class="dropdown-item" href="menu.html">Menu</a>
-			    	<a class="dropdown-item" href="wines">Wines</a>			    	
+			    	<a class="dropdown-item" href="wines.html">Wines</a>
+			    	
           		</div>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Book a Table</a>
-          </li>
-
           <li class="nav-item">
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contacts.html">Contact Us</a>
           </li>
         </ul>
         
       </div>
     </nav> <!-- NAVBAR -->
 
-    <div class="container" id="winelist">
-    	<h1>Wines</h1>
-    	<br/>
-    	<br/>
-    	<div class="row">
-    		<div class="col">
-    			<p>The wines served at Kamotes are imported from artisan wine-growers near and far; women and men with a passion for their craft, a deep respect for their land and a thoughtful approach to their processes.</p>
-    			<p>The list offers wines of distinction, often produced with minimal intervention and always reflective of the place they were grown and the people who have made them.</p>    			
-    		</div>
-    		<div class="col">
-    			<p>A selection from our wine list —</p>
-	<p>2009 Holly’s Garden Blanc de Noirs / King Valley, Victoria</p>
 
-	<p>NV Benoit Dehu ‘Cuvée de la Rue des Noyers’ / Fossoy, Champagne</p>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column animated fadeIn">  <!-- COVER PAGE -->
+      
+      <main role="main" class="inner cover">
+      	<h1 class="cover-heading animated fadeIn" id="h1landing"><strong>Welcome</strong></h1>
+        <h3 class="cover-heading animated fadeIn" id="h3landing">Kamotes</h3>
+        <h6 class="cover-heading animated fadeIn" id="nameCover"><span><small>by Glen</small></span></h6>
+        <br/>
+        <p class="lead animated fadeIn">A Feast for your Senses. Ready to be opened.</p>
+        <p class="lead">
+          <a href="about.html" class="btn btn-lg btn-outline-light animated fadeIn">Enter</a>
+        </p>
+      </main>
 
-	<p>2016 Tom Shobbrook ‘Didi Wines’ Riesling / Eden Valley, South Australia</p>
-
-	<p>2015 Lillian Marsanne Roussanne / Great Southern, Western Australia</p>
-
-	<p>2015 Mendall ‘Abuerador’ Macabeo / Terra Alta, Spain</p>
-
-	<p>2010 Moorooduc Estate ‘The McIntyre’ Chardonnay / Mornington Peninsula, Victoria</p>
-
-	<p>2015 Domaine Jules Metras ‘Bijou’ / Beaujolais, France</p>
-
-	<p>2006 Lethbridge ‘Mietta’ Pinot Noir / Geelong, Victoria</p>
-
-	<p>1998 Wantirna Estate ‘Amelia’ Cabernet Sauvignon Merlot / Yarra Valley, Victoria</p>
-
-	<p>2013 Joan D’Anguera Finca l’Argata Garnatxa / Montsant, Spain</p>
-
-	<p>2015 Sami-Odi ‘Mahé & Ribo’ Shiraz / Barossa Valley, South Australia</p>
-
-	<p>2016 Fighting Gully Road Petit Manseng Moelleux / Beechworth, Victoria</p>
-
-    		</div>
-    	</div>
-    </div>
-
-
+    </div>  <!-- COVER PAGE -->
 
 
 
@@ -116,7 +87,13 @@
 	<footer class="footer"> <!-- FOOTER -->
       <div class="container">
         <span class="text-muted">&copy Copyright 2018 Kamotes by Glen - All Rights Reserved</span>
-
+        <br/>
+        <br/>
+        <div id="footerIcons">        
+          <a href="https://www.facebook.com/gbarcial" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/gbarcial/" target="_blank"><i class="fab fa-instagram"></i></a>         
+          <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
       </div>
     </footer>
 
@@ -145,6 +122,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
 
