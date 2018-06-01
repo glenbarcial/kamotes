@@ -4,6 +4,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	color: white;
+	font-family: 'Dosis', sans-serif;
 
 }
 
@@ -19,7 +20,7 @@ body {
 
 
 #nameCover { 
-  padding-right: 100px;
+  padding-right: 0px;
 }
 
 .cover {
@@ -27,7 +28,11 @@ body {
 }
 
 .h3landing {
-	padding-right: 100px;
+	
+}
+
+span {
+	margin-right: 50px;
 }
 
 h6 {
@@ -54,12 +59,18 @@ h6 {
   /*padding-top: 100px*/;
 }
 
+#h1landing {
+	letter-spacing: 10px;
+	font-size: 5em;
+	font-family: 'Dancing Script', cursive;
+}
+
 .aboutMenu {
 	background-image: url(../../assets/images/dining3.jpg);
 	/*height: 100%;*/
 	background-repeat: no-repeat;
 	background-size: cover;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	/*padding-top: 100px*/;
 }
 
@@ -79,6 +90,19 @@ h6 {
 
 }
 
+#winepic {
+	max-height: 400px;
+	max-width: 345px;
+	padding-right: 20px;
+}
+
+#foodpic {
+	max-height: 800px;
+	max-width: 300px;
+	opacity: 50%;
+}
+
+
 .aboutWines {
 	background-image: url(../../assets/images/vintage.jpg);
 	height: 100%;
@@ -88,10 +112,14 @@ h6 {
 	/*padding-top: 100px*/;
 }
 
+#masonry {
+	padding-top: 100px;
+}
+
 article {
 	color: white;
 	margin-bottom: 550px;
-  padding-top: 150px;
+  	padding-top: 150px;
 	height: 25vh;
 }
 
@@ -119,39 +147,71 @@ section {
 
 .footer {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 10px;
  
 }
 
+#footerIcons {
+	display: inline;
+}
+
+.card-columns {
+	padding-top: 100px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.card {
+	/*opacity: 0.6;*/
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	
+}
+
+.card:hover {
+	/*transform: scale(1.1);
+	transition: 0.3s;
+	animation-iteration-count: 1;
+	height: 50vh;
+	opacity: 1;*/
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	
+
+}
+
+#wrapper .text .card-body {
+position:relative;
+bottom:30px;
+left:0px;
+visibility:hidden;
+}
+
+#wrapper:hover .text .card-body{
+visibility:visible;
+}
 
 
-.masonry { /* Masonry container */
-    -webkit-column-count: 4;
-  -moz-column-count:4;
-  column-count: 4;
-  -webkit-column-gap: 1em;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-   margin: 1.5em;
-    padding: 0;
-    -moz-column-gap: 1.5em;
-    -webkit-column-gap: 1.5em;
-    column-gap: 1.5em;
-    font-size: .85em;
+form {
+	
+	padding: 10px;
+	margin: 10px;
 }
-.item {
-    display: inline-block;
-    background: #fff;
-    padding: 1em;
-    margin: 0 0 1.5em;
-    width: 100%;
-	-webkit-transition:1s ease all;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-shadow: 2px 2px 4px 0 #ccc;
+
+#social {
+	padding-top: 150px;
+	margin-bottom: 150px;
+	
 }
-.item img{max-width:100%;}
+
+#subscribe {
+	max-width: 100px;
+
+}
+
 
 
 
